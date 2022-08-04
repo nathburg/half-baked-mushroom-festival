@@ -82,7 +82,7 @@ function displayFriends() {
             } else if (mushroomCount === 0) {
                 alert('You need to forage more mushrooms!');
             }
-        })
+        });
         // append the friendEl to the friends list in DOM
         friendsEl.append(friendEl);
     }
