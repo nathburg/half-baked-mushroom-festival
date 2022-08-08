@@ -9,6 +9,7 @@ const addFriendButton = document.getElementById('add-friend-button');
 // initialize state
 
 let mushroomCount = 3;
+let randomFriends = ['Jeff', 'Harley', 'Winston', 'Rosie', 'Jo'];
 
 const friendData = [
     {
@@ -45,7 +46,8 @@ addFriendButton.addEventListener('click', () => {
     // get the name from the input
     let newFriendName = friendInputEl.value;
     if (newFriendName === '') {
-        newFriendName = 'Stranger';
+        const picker = Math.floor(Math.random() * randomFriends.length);
+        newFriendName = randomFriends[picker];
     }
     
     const newFriend = {
