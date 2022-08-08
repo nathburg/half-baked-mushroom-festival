@@ -9,7 +9,7 @@ const addFriendButton = document.getElementById('add-friend-button');
 // initialize state
 
 let mushroomCount = 3;
-let randomFriends = ['Jeff', 'Harley', 'Winston', 'Rosie', 'Jo']
+let randomFriends = ['Jeff', 'Harley', 'Winston', 'Rosie', 'Jo'];
 
 const friendData = [
     {
